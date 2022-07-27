@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mecanismo de busaca -->
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="combustivel,app,web, webapp,etaanol,gasolina,melhor, senai, desenvolvedor, desenvolvimento, desenvolvido, noturno, front-end, instrutor, ti, css, html, javascript"/>
+    <meta name="description" content="WebApp desenvolvido pelo Irineu Delson - Desenvolvedor Font-End."
+    <meta name="author" content="Irineu Delson" />
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="all" />
+    <title>App Combustivel</title>
+</head>
+<body id="cor">
+    <header>
+        <div class="container">
+            <h1>App Combustivel</h1>
+            <hr />
+            <h2 id="result"></h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form onsubmit="return false;">
+                <div class="container_2">
+                    <div class="container_3">
+                        <label>Valor da gasolina</label><br />
+                        <label>R$</label>
+                        <input type="text" placeholder="0,00" id="gasolina" onkeydown="verificarInput(event);" /><br /><br />
+                        <label>Valor do Etanol</label><br />
+                        <label>R$</label>
+                        <input type="text" placeholder="0,00" id="etanol" onkeydown="verificarInput(event);" /><br /><br />
+                        <button onclick="combustivel();">Calcular</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
